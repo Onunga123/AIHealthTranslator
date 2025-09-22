@@ -1,0 +1,4 @@
+fastapi==0.110.0      # The web framework (faster & modern alternative to Flask)
+uvicorn==0.29.0       # Runs the FastAPI server
+pydantic==2.7.0       # For data validation (ensures input is clean)
+python-dotenv==1.0.1  # To load environment variables from .env file
