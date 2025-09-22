@@ -1,0 +1,14 @@
+﻿# Virtual environments
+venv/
+backend/venv2/
+
+# Model checkpoints and large training files
+backend/training/luo_model/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System / editor files
+.DS_Store
+Thumbs.db
