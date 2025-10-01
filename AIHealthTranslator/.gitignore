@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 node_modules/
 .env
+*.db
+backend/app/*.db
+translator.db
