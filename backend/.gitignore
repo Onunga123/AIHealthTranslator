@@ -1,0 +1,3 @@
+*.db
+backend/app/*.db
+translator.db
