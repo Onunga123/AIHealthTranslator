@@ -2222,3 +2222,116 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='huggingface.co', 
 2025-12-07 22:53:27,313 - backend - INFO - Database initialization complete.
 2025-12-07 22:53:31,042 - backend - INFO - Luo model and tokenizer loaded successfully.
 2025-12-07 22:53:37,328 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-07 23:25:05,210 - backend - INFO - Starting database initialization...
+2025-12-07 23:25:05,237 - backend - INFO - Database initialization complete.
+2025-12-07 23:25:08,966 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-07 23:25:14,146 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-07 23:29:03,970 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/auth/me
+2025-12-07 23:29:03,984 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-07 23:29:03,993 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/me
+2025-12-07 23:29:04,053 - auth - INFO - [ME] Current user fetched: Chris
+2025-12-07 23:29:04,065 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-07 23:29:16,819 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/me
+2025-12-07 23:29:16,835 - auth - INFO - [ME] Current user fetched: Chris
+2025-12-07 23:29:16,838 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:46:53,523 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/sw/Ward
+2025-12-08 08:46:53,525 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:46:53,529 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Ward
+2025-12-08 08:48:39,501 - backend - INFO - Starting database initialization...
+2025-12-08 08:48:39,527 - backend - INFO - Database initialization complete.
+2025-12-08 08:48:45,497 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 08:48:52,774 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 08:50:30,238 - backend - INFO - [TRANSLATION] Kiswahili: 'Ward' -> 'Ward'
+2025-12-08 08:50:30,244 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:50:30,249 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/sw/Medicine
+2025-12-08 08:50:30,250 - backend - INFO - [REQUEST] Incoming: POST http://localhost:8000/auth/login
+2025-12-08 08:50:30,252 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Ward
+2025-12-08 08:50:30,666 - backend - INFO - [TRANSLATION] Kiswahili: 'Ward' -> 'Ward'
+2025-12-08 08:50:30,668 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:50:30,669 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:50:30,682 - auth - INFO - [LOGIN] Attempt for username: Chris
+2025-12-08 08:50:30,709 - auth - INFO - [LOGIN] DB query done in 0.027s
+2025-12-08 08:50:31,067 - auth - WARNING - [LOGIN] Password verification failed in 0.357s
+2025-12-08 08:50:31,068 - auth - ERROR - [LOGIN] Login failed: 401: Invalid username or password
+Traceback (most recent call last):
+  File "C:\AIHealthTranslator\backend\app\routers\auth.py", line 103, in login
+    raise HTTPException(status_code=401, detail="Invalid username or password")
+fastapi.exceptions.HTTPException: 401: Invalid username or password
+2025-12-08 08:50:31,087 - backend - INFO - [REQUEST] Completed with status 500
+2025-12-08 08:53:03,052 - backend - INFO - [REQUEST] Incoming: POST http://localhost:8000/auth/login
+2025-12-08 08:53:03,057 - auth - INFO - [LOGIN] Attempt for username: Chris
+2025-12-08 08:53:03,059 - auth - INFO - [LOGIN] DB query done in 0.002s
+2025-12-08 08:53:03,376 - auth - INFO - [LOGIN] Password verified in 0.316s
+2025-12-08 08:53:03,381 - auth - INFO - [LOGIN] Token created in 0.005s
+2025-12-08 08:53:03,381 - auth - INFO - [LOGIN] Total login time: 0.324s
+2025-12-08 08:53:03,385 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:53:05,237 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/auth/me
+2025-12-08 08:53:05,258 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:53:05,272 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/me
+2025-12-08 08:53:05,289 - auth - INFO - [ME] Current user fetched: Chris
+2025-12-08 08:53:05,299 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:53:14,690 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/sw/Ward
+2025-12-08 08:53:14,699 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:53:14,717 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Ward
+2025-12-08 08:53:15,271 - backend - INFO - [TRANSLATION] Kiswahili: 'Ward' -> 'Ward'
+2025-12-08 08:53:15,271 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:53:22,101 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/luo/Ward
+2025-12-08 08:53:22,104 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:53:22,112 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Ward
+2025-12-08 08:55:31,910 - backend - INFO - [TRANSLATION] Luo: 'Ward' -> 'Ward'
+2025-12-08 08:55:31,912 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:55:31,915 - backend - INFO - [REQUEST] Incoming: POST http://localhost:8000/auth/login
+2025-12-08 08:55:31,916 - backend - INFO - [REQUEST] Incoming: POST http://localhost:8000/auth/login
+2025-12-08 08:55:31,918 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Ward
+2025-12-08 08:55:32,235 - backend - INFO - [TRANSLATION] Kiswahili: 'Ward' -> 'Ward'
+2025-12-08 08:55:32,236 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:55:32,256 - auth - INFO - [LOGIN] Attempt for username: Chris
+2025-12-08 08:55:32,258 - auth - INFO - [LOGIN] Attempt for username: Chris
+2025-12-08 08:55:32,259 - auth - INFO - [LOGIN] DB query done in 0.003s
+2025-12-08 08:55:32,274 - auth - INFO - [LOGIN] DB query done in 0.017s
+2025-12-08 08:55:32,582 - auth - INFO - [LOGIN] Password verified in 0.318s
+2025-12-08 08:55:32,583 - auth - INFO - [LOGIN] Token created in 0.000s
+2025-12-08 08:55:32,583 - auth - INFO - [LOGIN] Total login time: 0.327s
+2025-12-08 08:55:32,587 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:55:32,651 - auth - INFO - [LOGIN] Password verified in 0.375s
+2025-12-08 08:55:32,671 - auth - INFO - [LOGIN] Token created in 0.001s
+2025-12-08 08:55:32,675 - auth - INFO - [LOGIN] Total login time: 0.418s
+2025-12-08 08:55:32,685 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:55:35,916 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/auth/me
+2025-12-08 08:55:35,957 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:55:35,983 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/me
+2025-12-08 08:55:36,002 - auth - INFO - [ME] Current user fetched: Chris
+2025-12-08 08:55:36,005 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:55:48,038 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Ward
+2025-12-08 08:55:48,425 - backend - INFO - [TRANSLATION] Kiswahili: 'Ward' -> 'Ward'
+2025-12-08 08:55:48,426 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:56:36,335 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/sw/Medicine
+2025-12-08 08:56:36,337 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:56:36,340 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Medicine
+2025-12-08 08:56:36,502 - backend - INFO - [TRANSLATION] Kiswahili: 'Medicine' -> 'Dawa'
+2025-12-08 08:56:36,503 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:56:44,490 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/luo/Medicine
+2025-12-08 08:56:44,496 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:56:44,513 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Medicine
+2025-12-08 08:56:44,977 - backend - INFO - [TRANSLATION] Luo: 'Medicine' -> 'Yath'
+2025-12-08 08:56:44,978 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:56:55,150 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Ward
+2025-12-08 08:56:55,476 - backend - INFO - [TRANSLATION] Luo: 'Ward' -> 'Ward'
+2025-12-08 08:56:55,478 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:57:00,929 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Ward
+2025-12-08 08:57:01,303 - backend - INFO - [TRANSLATION] Kiswahili: 'Ward' -> 'Ward'
+2025-12-08 08:57:01,304 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:57:13,945 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/dictionary/Ward
+2025-12-08 08:57:13,947 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 08:57:13,957 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/dictionary/Ward
+2025-12-08 08:57:13,974 - dictionary - INFO - Trying AI translation for: Ward
+2025-12-08 08:57:14,020 - dictionary - WARNING - AI translation failed: module 'app.routers.dictionary' has no attribute 'get_word_translation'
+2025-12-08 08:57:14,021 - dictionary - INFO - Falling back to dictionary DB
+2025-12-08 08:57:14,027 - backend - INFO - [REQUEST] Completed with status 404
+2025-12-08 08:57:17,146 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/me
+2025-12-08 08:57:17,168 - auth - INFO - [ME] Current user fetched: Chris
+2025-12-08 08:57:17,172 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:03:28,727 - backend - INFO - Starting database initialization...
+2025-12-08 09:03:28,753 - backend - INFO - Database initialization complete.
+2025-12-08 09:03:33,389 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:03:38,860 - backend - INFO - Kiswahili model loaded successfully.
