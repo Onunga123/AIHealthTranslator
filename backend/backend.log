@@ -2335,3 +2335,73 @@ fastapi.exceptions.HTTPException: 401: Invalid username or password
 2025-12-08 09:03:28,753 - backend - INFO - Database initialization complete.
 2025-12-08 09:03:33,389 - backend - INFO - Luo model and tokenizer loaded successfully.
 2025-12-08 09:03:38,860 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:06:05,716 - backend - INFO - [REQUEST] Incoming: POST http://localhost:8000/auth/login
+2025-12-08 09:06:05,772 - auth - INFO - [LOGIN] Attempt for username: Chris
+2025-12-08 09:06:05,801 - auth - INFO - [LOGIN] DB query done in 0.030s
+2025-12-08 09:06:06,126 - auth - INFO - [LOGIN] Password verified in 0.325s
+2025-12-08 09:06:06,135 - auth - INFO - [LOGIN] Token created in 0.007s
+2025-12-08 09:06:06,137 - auth - INFO - [LOGIN] Total login time: 0.366s
+2025-12-08 09:06:06,148 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:06:08,664 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/auth/me
+2025-12-08 09:06:08,666 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:06:08,676 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/me
+2025-12-08 09:06:08,703 - auth - INFO - [ME] Current user fetched: Chris
+2025-12-08 09:06:08,714 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:18:43,241 - backend - INFO - [REQUEST] Incoming: POST http://localhost:8000/auth/login
+2025-12-08 09:18:43,253 - auth - INFO - [LOGIN] Attempt for username: Chris
+2025-12-08 09:18:43,257 - auth - INFO - [LOGIN] DB query done in 0.004s
+2025-12-08 09:18:43,557 - auth - INFO - [LOGIN] Password verified in 0.299s
+2025-12-08 09:18:43,558 - auth - INFO - [LOGIN] Token created in 0.000s
+2025-12-08 09:18:43,559 - auth - INFO - [LOGIN] Total login time: 0.305s
+2025-12-08 09:18:43,561 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:18:46,792 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/auth/me
+2025-12-08 09:18:46,794 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:18:46,799 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/me
+2025-12-08 09:18:46,811 - auth - INFO - [ME] Current user fetched: Chris
+2025-12-08 09:18:46,814 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:21:31,357 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/oauth/google
+2025-12-08 09:21:31,365 - backend - INFO - [REQUEST] Completed with status 404
+2025-12-08 09:21:33,295 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/favicon.ico
+2025-12-08 09:21:33,332 - backend - INFO - [REQUEST] Completed with status 404
+2025-12-08 09:21:54,270 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/oauth/facebook
+2025-12-08 09:21:54,273 - backend - INFO - [REQUEST] Completed with status 404
+2025-12-08 09:24:14,014 - backend - INFO - Starting database initialization...
+2025-12-08 09:24:14,014 - backend - INFO - Starting database initialization...
+2025-12-08 09:24:14,014 - backend - INFO - Starting database initialization...
+2025-12-08 09:24:14,013 - backend - INFO - Starting database initialization...
+2025-12-08 09:24:14,040 - backend - INFO - Database initialization complete.
+2025-12-08 09:24:14,043 - backend - INFO - Database initialization complete.
+2025-12-08 09:24:14,050 - backend - INFO - Database initialization complete.
+2025-12-08 09:24:14,052 - backend - INFO - Database initialization complete.
+2025-12-08 09:24:21,863 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:24:21,903 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:24:21,931 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:24:21,970 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:24:36,338 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:24:36,511 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:24:36,904 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:24:37,487 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:24:51,747 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/oauth/google
+2025-12-08 09:24:51,808 - backend - INFO - [REQUEST] Completed with status 501
+2025-12-08 09:25:06,853 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/oauth/facebook
+2025-12-08 09:25:06,855 - backend - INFO - [REQUEST] Completed with status 501
+2025-12-08 09:26:22,326 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/oauth/facebook
+2025-12-08 09:26:22,332 - backend - INFO - [REQUEST] Completed with status 501
+2025-12-08 09:26:31,141 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/oauth/google
+2025-12-08 09:26:31,145 - backend - INFO - [REQUEST] Completed with status 501
+2025-12-08 09:29:14,425 - backend - INFO - Starting database initialization...
+2025-12-08 09:29:14,482 - backend - INFO - Database initialization complete.
+2025-12-08 09:29:16,900 - backend - INFO - Starting database initialization...
+2025-12-08 09:29:16,927 - backend - INFO - Database initialization complete.
+2025-12-08 09:29:17,003 - backend - INFO - Starting database initialization...
+2025-12-08 09:29:17,029 - backend - INFO - Database initialization complete.
+2025-12-08 09:29:17,114 - backend - INFO - Starting database initialization...
+2025-12-08 09:29:17,139 - backend - INFO - Database initialization complete.
+2025-12-08 09:29:20,072 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:29:22,511 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:29:22,518 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:29:22,643 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:29:31,827 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:29:34,198 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:29:35,578 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:29:35,889 - backend - INFO - Kiswahili model loaded successfully.
