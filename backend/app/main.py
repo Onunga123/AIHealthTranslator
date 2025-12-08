@@ -5,6 +5,7 @@ from pathlib import Path
 import logging
 import sys
 import torch
+import os
 
 from app.database import init_db
 from app.scripts.seed_dictionary import seed_dictionary_terms
@@ -28,6 +29,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger("backend")
 
+# Environment-configurable paths
+FAISS_DIR = os.getenv("FAISS_DIR", "backend/faiss_out")
+DB_PATH = os.getenv("DB_PATH", "backend/translator.db")
+
 # ----------------------------
 # Initialize FastAPI app
 # ----------------------------
@@ -42,13 +47,16 @@ app = FastAPI(
 # ----------------------------
 # CORS configuration
 # ----------------------------
+origins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    # add your future Vercel URL later, e.g. "https://your-app.vercel.app"
+    "https://frontend-opal-five-82.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000", 
-        "http://127.0.0.1:3000",
-        "https://frontend-opal-five-82.vercel.app",  # Vercel frontend
-    ],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

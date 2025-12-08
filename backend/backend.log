@@ -2431,3 +2431,85 @@ fastapi.exceptions.HTTPException: 401: Invalid username or password
 2025-12-08 09:31:03,509 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/sickness
 2025-12-08 09:31:04,835 - backend - INFO - [TRANSLATION] Luo: 'sickness' -> 'Tero remo'
 2025-12-08 09:31:04,836 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:44:29,941 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/sw/Headache
+2025-12-08 09:44:29,966 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:44:30,058 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Headache
+2025-12-08 09:44:30,912 - backend - INFO - [TRANSLATION] Kiswahili: 'Headache' -> 'Maumivu ya kichwa'
+2025-12-08 09:44:30,920 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:44:35,889 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/luo/Headache
+2025-12-08 09:44:35,897 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:44:35,906 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Headache
+2025-12-08 09:44:37,352 - backend - INFO - [TRANSLATION] Luo: 'Headache' -> 'Riu wi'
+2025-12-08 09:44:37,354 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:54:37,797 - backend - INFO - Starting database initialization...
+2025-12-08 09:54:37,797 - backend - INFO - Starting database initialization...
+2025-12-08 09:54:37,797 - backend - INFO - Starting database initialization...
+2025-12-08 09:54:37,837 - backend - INFO - Database initialization complete.
+2025-12-08 09:54:37,839 - backend - INFO - Database initialization complete.
+2025-12-08 09:54:37,857 - backend - INFO - Database initialization complete.
+2025-12-08 09:54:42,520 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:54:42,520 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:54:43,313 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:54:50,201 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:54:51,167 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:54:51,210 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:55:00,695 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/luo/Headache
+2025-12-08 09:55:00,699 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:55:00,703 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Headache
+2025-12-08 09:55:04,700 - backend - INFO - [TRANSLATION] Luo: 'Headache' -> 'Riu wi'
+2025-12-08 09:55:04,702 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:56:41,600 - backend - INFO - Starting database initialization...
+2025-12-08 09:56:41,637 - backend - INFO - Database initialization complete.
+2025-12-08 09:56:47,974 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:56:48,013 - backend - INFO - Starting database initialization...
+2025-12-08 09:56:48,039 - backend - INFO - Database initialization complete.
+2025-12-08 09:56:52,828 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:56:59,057 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:57:00,640 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:57:10,781 - backend - INFO - Starting database initialization...
+2025-12-08 09:57:10,801 - backend - INFO - Database initialization complete.
+2025-12-08 09:57:14,529 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:57:20,956 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:57:44,194 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/sw/Running nose
+2025-12-08 09:57:44,226 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:57:53,375 - backend - INFO - Starting database initialization...
+2025-12-08 09:57:53,390 - backend - INFO - Database initialization complete.
+2025-12-08 09:57:57,604 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:58:03,004 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 09:58:03,284 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Running nose
+2025-12-08 09:58:06,162 - backend - INFO - [TRANSLATION] Kiswahili: 'Running nose' -> 'Pua inayouma'
+2025-12-08 09:58:06,163 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:58:13,288 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/luo/Running nose
+2025-12-08 09:58:13,296 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:58:13,307 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Running nose
+2025-12-08 09:58:13,802 - backend - INFO - [TRANSLATION] Luo: 'Running nose' -> 'Tero remo'
+2025-12-08 09:58:13,804 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:58:27,763 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/luo/Mouth
+2025-12-08 09:58:27,768 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:58:27,789 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Mouth
+2025-12-08 09:58:28,120 - backend - INFO - [TRANSLATION] Luo: 'Mouth' -> 'Yath matin'
+2025-12-08 09:58:28,121 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:58:32,452 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/sw/Mouth
+2025-12-08 09:58:32,456 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:58:32,463 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Mouth
+2025-12-08 09:58:32,680 - backend - INFO - [TRANSLATION] Kiswahili: 'Mouth' -> 'Kinywa'
+2025-12-08 09:58:32,681 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 09:59:27,264 - backend - INFO - Starting database initialization...
+2025-12-08 09:59:27,280 - backend - INFO - Database initialization complete.
+2025-12-08 09:59:30,584 - backend - INFO - Luo model and tokenizer loaded successfully.
+2025-12-08 09:59:35,337 - backend - INFO - Kiswahili model loaded successfully.
+2025-12-08 10:05:00,530 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/sw/Father
+2025-12-08 10:05:00,541 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 10:05:00,718 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/sw/Father
+2025-12-08 10:05:01,142 - backend - INFO - [TRANSLATION] Kiswahili: 'Father' -> 'Baba'
+2025-12-08 10:05:01,145 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 10:05:05,140 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/luo/Father
+2025-12-08 10:05:05,144 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 10:05:05,161 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Father
+2025-12-08 10:05:05,682 - backend - INFO - [TRANSLATION] Luo: 'Father' -> 'Baba'
+2025-12-08 10:05:05,683 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 10:17:56,978 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/translate/luo/Drug
+2025-12-08 10:17:56,982 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 10:17:57,004 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Drug
+2025-12-08 10:17:57,458 - backend - INFO - [TRANSLATION] Luo: 'Drug' -> 'Yath'
+2025-12-08 10:17:57,460 - backend - INFO - [REQUEST] Completed with status 200
