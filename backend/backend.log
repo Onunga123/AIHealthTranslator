@@ -2513,3 +2513,20 @@ fastapi.exceptions.HTTPException: 401: Invalid username or password
 2025-12-08 10:17:57,004 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/translate/luo/Drug
 2025-12-08 10:17:57,458 - backend - INFO - [TRANSLATION] Luo: 'Drug' -> 'Yath'
 2025-12-08 10:17:57,460 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 10:24:41,354 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/auth/me
+2025-12-08 10:24:41,358 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 10:24:41,374 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/me
+2025-12-08 10:24:41,693 - auth - INFO - [ME] Current user fetched: Chris
+2025-12-08 10:24:41,850 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 19:38:09,152 - backend - INFO - [REQUEST] Incoming: POST http://localhost:8000/auth/login
+2025-12-08 19:38:09,267 - auth - INFO - [LOGIN] Attempt for username: Chris
+2025-12-08 19:38:09,351 - auth - INFO - [LOGIN] DB query done in 0.084s
+2025-12-08 19:38:10,273 - auth - INFO - [LOGIN] Password verified in 0.921s
+2025-12-08 19:38:10,276 - auth - INFO - [LOGIN] Token created in 0.003s
+2025-12-08 19:38:10,276 - auth - INFO - [LOGIN] Total login time: 1.009s
+2025-12-08 19:38:10,302 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 19:38:13,922 - backend - INFO - [REQUEST] Incoming: OPTIONS http://localhost:8000/auth/me
+2025-12-08 19:38:13,924 - backend - INFO - [REQUEST] Completed with status 200
+2025-12-08 19:38:13,930 - backend - INFO - [REQUEST] Incoming: GET http://localhost:8000/auth/me
+2025-12-08 19:38:13,943 - auth - INFO - [ME] Current user fetched: Chris
+2025-12-08 19:38:13,961 - backend - INFO - [REQUEST] Completed with status 200
